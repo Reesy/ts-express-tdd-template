@@ -1,6 +1,6 @@
 import { agent as request } from "supertest"; 
 import { expect } from 'chai';
-import { describe } from 'mocha';
+import { describe, it } from 'mocha';
 import { app } from "../app";
 
 const api = "/api/v1/test1"; 
@@ -24,7 +24,7 @@ describe(`When I call ${api} post endpoint`, () =>
           .set('Accept', 'application/json');
 
       expect(response.status).to.eql(200);
-      expect(response.body).to.eql("sdasd");
+      expect(response.body).to.eql("The body was: Hello, world!!");
     });
 
   });

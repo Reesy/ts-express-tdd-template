@@ -12,7 +12,9 @@ app.get('/api/v1/test1', (req: express.Request, res: express.Response) =>
 
 app.post('/api/v1/test1', (req: express.Request, res: express.Response) =>
 {
-  res.json({ message: 'Hello World!' });
+  let body: any = req.body;
+  let responseMessage = `The body was: ${body.message}!`;
+  res.json(responseMessage);
 });
 
 
