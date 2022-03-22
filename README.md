@@ -1,9 +1,23 @@
 # ts-express-tdd-template
-A template backend typescript project using REST with express and supertest for TDD
+A NODEJS based backend typescript project using REST with express and supertest for TDD.
 
-This project comes preset for vscode, the included ```.vscode/launch.json``` allows for running of the app with debugging as well as running of mocha tests with debugging. 
+This project comes preset for vscode, the included ```.vscode/launch.json``` allows for running of the app with breakpoints as well as running of mocha tests with breakpoints. 
 
-Commands:
+## Cloning: 
+
+Through CLI: 
+
+```
+git clone https://github.com/Reesy/ts-express-tdd-template
+```
+
+Graphically (this will also generate a project on your profile) 
+
+![image](https://user-images.githubusercontent.com/5430483/159441936-843331ee-820d-4dad-af03-f1a1d31b3383.png)
+
+
+
+## Commands:
 
 Install: (requires node and npm)
 ``` npm install ```
@@ -19,11 +33,11 @@ Test:
 
 Any tests added to the test folder will automatically be tested. 
 
-List of example requests:
 
+## REST API 
 
----
-GET example ```/api/v1/test1``` request:
+### GET ```/api/v1/test1```
+Example request:
 ```
 GET /api/v1/test1 HTTP/1.1
 {
@@ -40,9 +54,10 @@ Content-Length: xy
 
 "Hello World!" 
 ```
-
 ---
-Example ```/api/v1/test1``` request:
+
+### POST ```/api/v1/test1```
+Example request:
 ```
 POST /api/v1/test1 HTTP/1.1
 Accept: application/json
